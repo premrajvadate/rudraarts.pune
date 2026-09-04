@@ -1,0 +1,19 @@
+{
+  "name": "rudra-arts",
+  "version": "12.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed-super-admin": "node seed-super-admin.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "@vercel/blob": "^2.0.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.0"
+  }
+}

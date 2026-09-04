@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rudra Arts | Premium Signage & Creative Works</title>
+<meta name="description" content="Rudra Arts - LED boards, name plates, number plates, laser cutting, acrylic & 3D letters and radium work in Moshi, Pune.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home"><img src="assets/logo.png" alt="Rudra Arts logo"><span id="brandName">Rudra Arts <small>#1771</small></span></a>
+  <nav>
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a>
+    <a href="#offers">Offers</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="lang active" data-lang="en">EN</button><button class="lang" data-lang="mr">मर</button><button class="lang" data-lang="hi">हि</button>
+    <a class="account-btn" href="/customer">Create Account</a><a class="admin-btn" href="/admin-login">🔐 Admin Login</a><button class="icon-btn" id="openLogin" title="Customer login">◉</button>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">RUDRA ARTS <span class="brand-code">#1771</span> • SIGNS • PRINTS • DESIGNS</p>
+    <h1>Make your <span>identity</span> impossible to miss.</h1>
+    <p class="lead">Custom signage and creative branding solutions crafted for shops, offices, homes and vehicles across Pune.</p>
+    <div class="hero-cta"><a class="btn gold" href="#services">Explore Services</a><a class="btn ghost" href="#quote">Get a Quote</a></div>
+    <div class="trust"><span id="ratingTrust">★ 0.0 Rating</span><span>•</span><span id="hoursTrust">10 AM – 10 PM</span><span>•</span><span id="areaTrust">Pune & nearby cities</span></div>
+  </div>
+  <div class="hero-card">
+    <div class="glow"></div><img src="assets/logo.png" alt="Rudra Arts">
+    <div class="card-caption"><b>RUDRA ARTS <em>#1771</em></b><span>CREATE • DESIGN • IMPRESS</span></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="section-head"><div><p class="eyebrow">WHAT WE DO</p><h2>Services built to stand out.</h2></div><button class="text-btn" id="adminServices">Manage Services →</button></div>
+  <div class="grid services-grid" id="servicesGrid"></div>
+</section>
+
+<section class="strip">
+  <div><b>Need something custom?</b><span>Tell us your size, quantity and idea. We’ll prepare a quote.</span></div>
+  <a class="btn gold" href="#quote">Start Enquiry</a>
+</section>
+
+<section class="section" id="gallery">
+  <div class="section-head"><div><p class="eyebrow">OUR WORK</p><h2>Recent work & featured creations.</h2></div><span class="pill">Admin managed</span></div>
+  <div class="gallery-grid" id="galleryGrid"></div>
+</section>
+
+<section class="section" id="smart">
+  <div class="smart-box">
+    <div><p class="eyebrow">SMART ASSIST</p><h2>Not sure what you need?</h2><p>Choose your purpose and budget. Get a quick starting recommendation, then send an enquiry to Rudra Arts.</p></div>
+    <div class="smart-form">
+      <select id="purpose"><option value="">Purpose</option><option>Shop branding</option><option>Home</option><option>Office</option><option>Vehicle</option></select>
+      <select id="budget"><option value="">Budget</option><option>Under ₹1,000</option><option>₹1,000–₹5,000</option><option>₹5,000+</option></select>
+      <button class="btn gold" id="recommend">Recommend</button>
+      <div id="recommendation" class="recommendation"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="offers">
+  <div class="section-head"><div><p class="eyebrow">CURRENT OFFERS</p><h2>Deals & highlights.</h2></div></div>
+  <div class="offers-card"><span class="badge">COMING SOON</span><h3>Shopkeeper-managed offers</h3><p>Offers, badges, starting prices and visibility will be controlled from the admin panel.</p><a href="#quote" class="text-btn">Ask for today's offer →</a></div>
+</section>
+
+<section class="section" id="quote">
+  <div class="quote-layout">
+    <div><p class="eyebrow">CUSTOM QUOTE</p><h2>Tell us what you need.</h2><p>Enquiries will be designed to save in the database and notify the shopkeeper on WhatsApp in the production backend.</p></div>
+    <form class="quote-form" id="quoteForm">
+      <input name="name" required placeholder="Your name">
+      <input name="phone" required placeholder="Mobile number">
+      <select name="service" required><option value="">Select service</option></select>
+      <input name="size" placeholder="Size (e.g. 5 × 3 ft)">
+      <input name="quantity" type="number" min="1" placeholder="Quantity">
+      <textarea name="requirement" placeholder="Describe your requirement"></textarea>
+      <label class="check"><input type="checkbox" name="delivery"> Home delivery (extra charge)</label>
+      <label class="check"><input type="checkbox" name="installation"> Installation (extra charge)</label>
+      <button class="btn gold" type="submit">Send Enquiry</button>
+      <small>We’ll use the details only for handling your enquiry.</small>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="section-head"><div><p class="eyebrow">CUSTOMER REVIEWS</p><h2>What customers say.</h2></div><span class="pill" id="reviewCount">0 approved reviews</span></div>
+  <div class="grid services-grid" id="reviewsGrid"><div class="gallery-empty"><b>No reviews yet.</b><span>Be the first customer to share your experience.</span></div></div>
+  <form id="reviewForm" class="quote-form" style="max-width:760px;margin:24px auto 0">
+    <div style="display:grid;grid-template-columns:1fr 180px;gap:12px"><input name="customer_name" required maxlength="100" placeholder="Your name"><select name="rating" required><option value="">Rating</option><option value="5">5 ★</option><option value="4">4 ★</option><option value="3">3 ★</option><option value="2">2 ★</option><option value="1">1 ★</option></select></div>
+    <textarea name="review" required maxlength="2000" rows="4" placeholder="Share your experience with Rudra Arts"></textarea>
+    <button class="btn gold" type="submit">Submit Review</button>
+    <small>Your review will appear after admin approval.</small><p id="reviewMsg"></p>
+  </form>
+</section>
+
+<section class="section" id="about">
+  <div class="about">
+    <div><p class="eyebrow">ABOUT RUDRA ARTS</p><h2>Local craftsmanship. Professional presentation.</h2><p>Rudra Arts creates custom signage and creative display work for businesses, homes and vehicles. The website is designed so the shopkeeper can keep services, pricing, offers and gallery work fresh without changing code.</p></div>
+    <div class="stats"><div><b id="serviceCount">6+</b><span>Core services</span></div><div><b id="ratingStat">0.0★</b><span>Customer rating</span></div><div><b id="hoursStat">10–10</b><span>Open daily</span></div></div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div><p class="eyebrow">VISIT OR CONTACT</p><h2>Let’s create something memorable.</h2>
+  <div class="contact-grid">
+    <div class="contact-card"><b>📍 Workshop</b><p id="addressText">Dehu - Moshi Rd, Tupe Vasti, Moshi, Pimpri-Chinchwad, Maharashtra 411070</p><a class="text-btn" id="mapLink" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Dehu%20Moshi%20Rd%20Tupe%20Vasti%20Moshi%20Pimpri-Chinchwad%20Maharashtra%20411070">Get Directions →</a></div>
+    <div class="contact-card"><b>📞 Call / WhatsApp</b><p id="phonesText">08080330153<br>9356474304</p><a class="text-btn" id="whatsappLink" target="_blank" href="https://wa.me/918080330153">WhatsApp →</a></div>
+    <div class="contact-card"><b>🕙 Opening Hours</b><p id="hoursText">Every day<br>10:00 AM – 10:00 PM</p></div>
+  </div></div>
+</section>
+</main>
+
+<footer><div class="brand"><img src="assets/logo.png" alt=""><span>Rudra Arts <small>#1771</small></span></div><p>© 2026 Rudra Arts. Crafted for a stronger local presence.</p><a href="#home">Back to top ↑</a></footer>
+
+<div class="modal" id="loginModal"><div class="modal-card"><button class="close" id="closeLogin">×</button><p class="eyebrow">CUSTOMER ACCOUNT</p><h2>Welcome back.</h2><p>Login to view your enquiries, quotations and account details.</p><a class="btn gold" href="/customer">Login to Customer Portal</a><a class="btn account-outline" href="/customer#register">Create Account</a><small>Guest browsing is available. Create an account to manage your enquiries and quotations.</small></div></div>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
